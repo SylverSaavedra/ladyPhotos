@@ -4,25 +4,32 @@
   box-sizing: border-box;
 }
 body {
-  background: url('../img/background.jpg') no-repeat center;
-  background-position: center center;
+  /* background: url('../img/background-mobile.jpg'); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-color: #404c48;
-  height: 100vh;
+  background-color: #404c48; */
+  /* height: 300px; */
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /* ? ----- PORTADA ----- */
 .portada {
   width: 100%;
-  min-height: 100vh;
+  max-height: 800px;
+  min-height: 70vh;
   top: 0;
   left: 0;
   right: 0;
@@ -35,6 +42,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 .portada.oculta {
   transform: translateY(100%);
@@ -98,7 +106,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .simply-section {
@@ -135,6 +143,7 @@ button {
 .redes-sociales .btn-red-social {
   padding: 30px 0 0 0;
   display: inline-block;
+  align-items: center;
   min-width: 20px;
   border-radius: 5px;
   color: white;
@@ -146,7 +155,24 @@ button {
 .redes-sociales .btn-red-social:hover {
   box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(../img/background-mobile.jpg);
+    background-size: cover;
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background: url(../img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #404c48;
+  }
   .logotipo {
     width: 300px;
   }

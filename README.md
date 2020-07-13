@@ -1,6 +1,3 @@
-# Aprende a Crear una Cuenta Regresiva Fácil y Rapido con Javascript | SimplyCountdown.js
-### [Tutorial: https://youtu.be/UMpqdZKJV7M](https://youtu.be/UMpqdZKJV7M)
+# PAGINA DE MANTENIMIENTO DE LA WEB http://www.ladypalacios.com/
 
-![Aprende a Crear una Cuenta Regresiva Fácil y Rapido con Javascript | SimplyCountdown.js](https://raw.githubusercontent.com/falconmasters/cuenta-regresiva/master/img/thumb.png)
-
-Por: [FalconMasters](http://www.falconmasters.com)
+Por: [SylverSaavedra](https://github.com/SylverSaavedra)
