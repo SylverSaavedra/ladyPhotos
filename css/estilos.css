@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('../img/background.jpg') no-repeat center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #404c48;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* ? ----- PORTADA ----- */
+.portada {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease-out all;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portada.oculta {
+  transform: translateY(100%);
+}
+.portada .header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.portada .header .logotipo {
+  font-size: 50px;
+  font-size: 900;
+}
+.portada .header .mensaje {
+  font-size: 14px;
+  font-weight: 600;
+}
+.header {
+  padding-top: 40px;
+}
+.logotipo {
+  width: 300px;
+}
+.mensaje {
+  color: gray;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.containerNotificame {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.containerSubscribe {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.inputField {
+  flex: 1;
+  height: 40px;
+  color: white;
+  padding: 3px;
+  width: 200px;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.input:focus {
+  border: 1px solid white;
+}
+
+button {
+  height: 40px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  float: right;
+}
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.simply-section {
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.simply-amount {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.simply-word {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* ? ---------------------------- */
+
+/* ? ----- REDES SOCIALES ----- */
+.redes-sociales .btn-red-social {
+  padding: 80px 0 0 0;
+  display: inline-block;
+  min-width: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin: 0 20px;
+  transition: 0.3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .portada .header .mensaje {
+    font-size: 30px;
+  }
+  .container {
+    padding: 10px;
+  }
+  .portada .header {
+    margin-bottom: 50px;
+  }
+  .inputField {
+    width: 300px;
+    padding: 10px;
+  }
+  .simply-section {
+    width: 180px;
+    height: 180px;
+    margin: 0 10px;
+  }
+  #cuenta {
+    padding-top: 0px;
+  }
+  .container {
+    padding-top: 20px;
+  }
+  .containerNotificame {
+    padding-top: 30px;
+  }
+  .containerSubscribe {
+    padding-top: 10px;
+  }
+}
