@@ -15,7 +15,8 @@ body {
   background-color: #404c48;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 /* ? ----- PORTADA ----- */
@@ -33,36 +34,32 @@ body {
   transition: 0.5s ease-out all;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
 }
 .portada.oculta {
   transform: translateY(100%);
-}
-.portada .header {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.portada .header .logotipo {
-  font-size: 50px;
-  font-size: 900;
-}
-.portada .header .mensaje {
-  font-size: 14px;
-  font-weight: 600;
 }
 .header {
   padding-top: 40px;
 }
 .logotipo {
-  width: 300px;
+  width: 250px;
 }
 .mensaje {
-  color: gray;
+  color: white;
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.saludo {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 30px;
 }
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 60px;
+  width: 100%;
+  margin: 0 auto;
 }
 .containerNotificame {
   display: flex;
@@ -126,11 +123,17 @@ button {
   font-size: 15px;
 }
 
+::placeholder {
+  color: gray;
+}
+.containerContactame {
+  padding-top: 20px;
+}
 /* ? ---------------------------- */
 
 /* ? ----- REDES SOCIALES ----- */
 .redes-sociales .btn-red-social {
-  padding: 80px 0 0 0;
+  padding: 30px 0 0 0;
   display: inline-block;
   min-width: 20px;
   border-radius: 5px;
@@ -144,11 +147,17 @@ button {
   box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
-  .portada .header .mensaje {
-    font-size: 30px;
+  .logotipo {
+    width: 300px;
   }
-  .container {
-    padding: 10px;
+  .mensaje {
+    font-size: 14px;
+    margin: auto;
+  }
+  .saludo {
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 30px;
   }
   .portada .header {
     margin-bottom: 50px;
@@ -158,20 +167,26 @@ button {
     padding: 10px;
   }
   .simply-section {
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
     margin: 0 10px;
   }
   #cuenta {
     padding-top: 0px;
   }
   .container {
-    padding-top: 20px;
+    padding-top: 80px;
   }
   .containerNotificame {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .containerSubscribe {
     padding-top: 10px;
+  }
+  .containerContactame {
+    padding-top: 60px;
+  }
+  .redes-sociales .btn-red-social {
+    padding: 20px 0 0 0;
   }
 }
